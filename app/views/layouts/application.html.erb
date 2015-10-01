@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>StephsBlog</title>
+  <title><%= yield(:title) %> | Steph's Blog</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
+	<!-- Used for Devise gem 
 	<p class="notice"><%= notice %></p>
 	<p class="alert"><%= alert %></p>
+	end Used for Devise gem -->
 	<%= yield %>
 
 </body>
